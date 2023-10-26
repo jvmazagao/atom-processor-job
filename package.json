@@ -1,0 +1,23 @@
+{
+  "name": "work-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "lint": "eslint --cache \"*.{js,jsx,ts,tsx}\"",
+    "lint:fix": "eslint --cache --fix \"*.{js,jsx,ts,tsx}\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^7.6.0",
+    "node-cron": "^3.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.51.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.28.1"
+  }
+}
