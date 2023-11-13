@@ -1,23 +1,11 @@
 const mongoose = require('mongoose');
 
 const moleuculeSchema = new mongoose.Schema({
-  title: {
+  _id: {
     type: String,
     require: true,
   },
-  aminoAcids: [{
-    identifier: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: 'AminoAcid',
-      require: false,
-    },
-    sequence: {
-      type: Number,
-      required: false,
-    },
-  },
-  ],
-});
+}, { timestamps: true });
 
 const Molecule = mongoose.model('Molecule', moleuculeSchema);
 
